@@ -1,7 +1,7 @@
 @extends('templates.maintemplate')
 @section('contenido')
 	<div class="row obras">
-		<div class="col-md-6 horizontal">
+		<div class="col-md-6 col-xs-12 horizontal">
 			<article class="infoobras">
 				<h2>Obras Horizontales</h2>
 				<img src="{{ asset('img/horizontal.jpg') }}">
@@ -10,7 +10,7 @@
 				</div>
 			</article>
 		</div>
-		<div class="col-md-6 vertical">
+		<div class="col-md-6 col-xs-12 vertical">
 			<article class="infoobras">
 				<h2>Obras Verticales</h2>
 				<img src="{{ asset('img/vertical.jpg') }}">

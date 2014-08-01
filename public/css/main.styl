@@ -1,0 +1,231 @@
+gris = rgba(0,0,0,0.7);
+azul = #004A99;
+
+body
+	margin 0
+	padding 0
+
+.slidermain	
+	background gris 
+
+	.row
+		margin 0
+		padding 0
+	.col-md-3, .col-md-9
+		margin 0
+		padding 0	
+
+.logo
+	height 30em
+	width 100%
+
+.navbar-collapse
+	margin 0
+	padding 0
+
+.navbar-nav
+	margin 7.5px 0px !important	
+
+.carousel-indicators
+	.active
+		background-color azul
+
+
+.menumain
+	margin 0
+	padding 0
+	li
+		&:hover
+			background red !important
+
+		a
+			color azul !important
+			text-align center	
+			font-size 1.3em
+
+			&:hover
+				color white !important
+
+	.activemenu			
+		background red
+
+		a
+			color white !important
+.infomain
+	margin-top -8px
+	.row	
+		margin 0
+		padding 0
+		.col-md-3
+			margin 0
+			padding 0
+
+	.infoderecha
+		.row
+			margin 0
+			padding 0	
+
+		.col-xs-3	
+			margin 0
+			padding 0
+
+		.info
+			background  gris
+			height 120px
+			padding 0px 2px
+			position relative
+
+
+			.infoimg	
+				img
+					height 120px
+					opacity 0.3	
+					position relative			
+					width 100%
+					
+
+			.infocenter
+				img 
+					left 25%
+					position absolute
+					top 4%	
+					-webkit-transition all .5s ease	
+					-moz-transition all .5s ease	
+					transition all .5s ease	
+					width 50%
+					&:hover
+						-webkit-transform scale(1.2)
+						-moz-transform scale(1.2)
+						transform scale(1.2)
+				h2	
+					line-height 0.5
+					margin 0
+					padding 0
+					position absolute
+					text-align center
+					top 60%	
+					width 100%
+					a
+						color white
+						font-size 0.5em			
+						text-decoration none
+						
+
+.obras
+	margin 0
+	padding 0
+
+	.infoobras
+		position relative
+
+		h2
+			border-bottom 2px azul solid	
+			color azul	
+			text-align center
+		img
+			position relative
+			width 100%	
+
+		.descripobra
+			background gris
+			bottom 0			
+			position absolute
+			width 100%	
+
+			h3
+				color white
+				text-align center
+				width 100%
+
+
+@media screen and (min-width: 768px)	
+	.container-fluid
+		margin 0
+		padding 0
+	.navbar-nav
+		margin 0 !important
+	.navbar-default
+		background-color white	
+		border-color transparent
+	.navbar
+		border-radius 0px 	
+
+	.nav
+		li
+			border 1px solid black
+			a
+				padding 10px 17px 
+
+@media (min-width: 1020px)	
+	.logo
+		height 28.2em
+	.nav
+		li
+			a
+				padding 10px 38px 
+	.carousel-indicators			
+		margin 0
+		padding 0
+		right 20px
+		width auto
+		left auto
+
+	.infomain
+		.infoderecha					
+			.info
+				height 200px
+				padding-bottom 5px	
+
+				.infoimg
+					img
+						height 190px
+				.infocenter
+					img							
+						left 30%
+						width 100px
+					h2
+						font-size 3em	
+	.obras
+		.horizontal
+			border-right 1px solid azul	
+		.vertical 
+			border-left 1px solid azul					
+
+@media (min-width: 1200px)	
+	.logo
+		height 33.5em
+	.nav
+		li
+			a
+				padding 10px 52px 
+	.infomain
+		.infoderecha					
+			.info
+				.infocenter
+					img							
+						left 34%				
+
+@media (min-width: 1300px)	
+	.logo
+		height 36.2em
+	.nav
+		li
+			a
+				padding 10px 60px 	
+
+@media (min-width: 1350px)	
+	.logo
+		height 37.5em
+	.nav
+		li
+			a
+				padding 10px 65px 					
+
+
+@media (min-width: 1400px)	
+	.logo
+		height 40em
+	.nav
+		li
+			a
+				padding 10px 73px

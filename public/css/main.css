@@ -1,170 +1,229 @@
-body{
-
+body {
+  margin: 0;
+  padding: 0;
 }
-
-/* SLIDER*/
-
-.slidermain{
-    background: rgba(0,0,0,0.7);
+.slidermain {
+  background: rgba(0,0,0,0.7);
 }
-
-.slidermain .col-md-9, .slidermain .col-md-3{
-    padding-right: 0;
+.slidermain .row {
+  margin: 0;
+  padding: 0;
 }
-.slidermain .col-md-3{
-    padding-left: 5px !important;
+.slidermain .col-md-3,
+.slidermain .col-md-9 {
+  margin: 0;
+  padding: 0;
 }
-.row{
+.logo {
+  height: 30em;
+  width: 100%;
+}
+.navbar-collapse {
+  margin: 0;
+  padding: 0;
+}
+.navbar-nav {
+  margin: 7.5px 0px !important;
+}
+.carousel-indicators .active {
+  background-color: #004a99;
+}
+.menumain {
+  margin: 0;
+  padding: 0;
+}
+.menumain li:hover {
+  background: #f00 !important;
+}
+.menumain li a {
+  color: #004a99 !important;
+  text-align: center;
+  font-size: 1.3em;
+}
+.menumain li a:hover {
+  color: #fff !important;
+}
+.menumain .activemenu {
+  background: #f00;
+}
+.menumain .activemenu a {
+  color: #fff !important;
+}
+.infomain {
+  margin-top: -8px;
+}
+.infomain .row {
+  margin: 0;
+  padding: 0;
+}
+.infomain .row .col-md-3 {
+  margin: 0;
+  padding: 0;
+}
+.infomain .infoderecha .row {
+  margin: 0;
+  padding: 0;
+}
+.infomain .infoderecha .col-xs-3 {
+  margin: 0;
+  padding: 0;
+}
+.infomain .infoderecha .info {
+  background: rgba(0,0,0,0.7);
+  height: 120px;
+  padding: 0px 2px;
+  position: relative;
+}
+.infomain .infoderecha .info .infoimg img {
+  height: 120px;
+  opacity: 0.3;
+  position: relative;
+  width: 100%;
+}
+.infomain .infoderecha .info .infocenter img {
+  left: 25%;
+  position: absolute;
+  top: 4%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 50%;
+}
+.infomain .infoderecha .info .infocenter img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.infomain .infoderecha .info .infocenter h2 {
+  line-height: 0.5;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  width: 100%;
+}
+.infomain .infoderecha .info .infocenter h2 a {
+  color: #fff;
+  font-size: 0.5em;
+  text-decoration: none;
+}
+.obras {
+  margin: 0;
+  padding: 0;
+}
+.obras .infoobras {
+  position: relative;
+}
+.obras .infoobras h2 {
+  border-bottom: 2px #004a99 solid;
+  color: #004a99;
+  text-align: center;
+}
+.obras .infoobras img {
+  position: relative;
+  width: 100%;
+}
+.obras .infoobras .descripobra {
+  background: rgba(0,0,0,0.7);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.obras .infoobras .descripobra h3 {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-nav {
     margin: 0 !important;
-    padding: 0 !important;
+  }
+  .navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+  }
+  .navbar {
+    border-radius: 0px;
+  }
+  .nav li {
+    border: 1px solid #000;
+  }
+  .nav li a {
+    padding: 10px 17px;
+  }
 }
-
-.slidermain .carousel-indicators{
-    left: auto !important;
-    right: 0 !important;
-    width: 15% !important;
-}
-
-.logo{
-    width: 100%;
-    height: 38.3em;
-    margin-top: -8px;
-}
-
-/*MENU*/
-.container-fluid{
-    margin: 0 !important;
-    padding: 0 !important;
-}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    border-color: transparent !important;
-}
-.navbar-default{
-    background-color: white !important;
-    border-color: white !important;
-}
-.navbar{
-    border-radius: 0 !important;
-}
-.menumain{
-    background: white;
-}
-.menumain ul{ 
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.menumain li{
-    float: left;
-    border: 1px solid black;
-    list-style: none;
-    padding: 0px 3.35%;
-    margin: 0 !important;
-}
-
-.menumain li a{
-    font-size: 1.5em ;
-    font-family: 'Myriad Pro';
-    text-decoration: none;
-    color: #004A99;
-}
-
-.menumain li:hover{
-    background: red;
-    color: white !important;
-}
-
-.menumain a:hover{
-    color: white !important;
-}
-
-.menumain .activemenu{
-    background-color: red;
-    color:white;
-}
-.activemenu a{
-    color:white !important;
-}
-
-/*INFORMACION*/
-
-.infoderecha{
-    background-color: rgba(0,0,0,0.7);   
-}
-
-.infomain .col-md-3{
-    padding-right: 5px !important;
-    padding-left: 5px !important;
-} 
-
-.info{
-    margin-top: 5px; 
-    margin-bottom: 4em;   
+@media (min-width: 1020px) {
+  .logo {
+    height: 28.2em;
+  }
+  .nav li a {
+    padding: 10px 38px;
+  }
+  .carousel-indicators {
+    margin: 0;
+    padding: 0;
+    right: 20px;
+    width: auto;
+    left: auto;
+  }
+  .infomain .infoderecha .info {
     height: 200px;
-    position: relative;   
+    padding-bottom: 5px;
+  }
+  .infomain .infoderecha .info .infoimg img {
+    height: 190px;
+  }
+  .infomain .infoderecha .info .infocenter img {
+    left: 30%;
+    width: 100px;
+  }
+  .infomain .infoderecha .info .infocenter h2 {
+    font-size: 3em;
+  }
+  .obras .horizontal {
+    border-right: 1px solid #004a99;
+  }
+  .obras .vertical {
+    border-left: 1px solid #004a99;
+  }
 }
-
-.infocenter img{
-    position: absolute;
-    left: 85px;   
-    top: 25px;
-    height: 150px;
-    -webkit-transition: all 1s ease;
+@media (min-width: 1200px) {
+  .logo {
+    height: 33.5em;
+  }
+  .nav li a {
+    padding: 10px 52px;
+  }
+  .infomain .infoderecha .info .infocenter img {
+    left: 34%;
+  }
 }
-.infocenter img:hover{
-    -webkit-transform:scale(1.1);
+@media (min-width: 1300px) {
+  .logo {
+    height: 36.2em;
+  }
+  .nav li a {
+    padding: 10px 60px;
+  }
 }
-.infocenter h2{
-    position: absolute;
-    bottom: -50px;
-    text-align: center;
-    color: white;
+@media (min-width: 1350px) {
+  .logo {
+    height: 37.5em;
+  }
+  .nav li a {
+    padding: 10px 65px;
+  }
 }
-.infocenter a{
-    color:white !important;
-    text-decoration: none;
-}
-.infoimg{
-    overflow: hidden;
-}
-.infoimg img{
-   width: 100%;
-   opacity: 0.3;
-}
-
-/*OBRAS*/
-.obras{
-    margin-top: 2em !important;    
-}
-.obras img{   
-    width: 100%;   
-}
-.obras h2{
-   color: #004A99;
-   border-bottom: 2px solid #004A99;
-   text-align: center;
-}
-
-.descripobra{
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    bottom: 0;
-    width: 94%;
-    text-align: center;
-}
-.descripobra h3{
-    color: white;
-}
-
-.horizontal{
-    border-right: 2px solid #004A99;   
-}
-.vertical{
-    border-left: 2px solid #004A99;
-}
-
-@media (max-width: 768px){
-    nav li{
-        width: 100% !important;
-    }
+@media (min-width: 1400px) {
+  .logo {
+    height: 40em;
+  }
+  .nav li a {
+    padding: 10px 73px;
+  }
 }

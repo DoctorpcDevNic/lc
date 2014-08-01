@@ -12,7 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-     	{{ HTML::style('css/bootstrap.css') }}
+     	{{ HTML::style('css/bootstrap.min.css') }}
      	{{ HTML::style('css/main.css') }}
 
        
@@ -91,46 +91,49 @@
       		<!--end menu -->
       	</section>
       </header>
+
       <!--informacion -->
-      <section style="margin-top:-21px;" class="infomain">
+      <section class="infomain">
       	<div class="row">
       		<div class="col-md-3 infoderecha">
-      			<article class="info">
-      				<div class="infoimg">
-      					<img src="{{ asset('img/Babilonia.jpg') }}">      					
-      				</div>
-      				<div class="infocenter">
-      					<img src="{{ asset('img/casco.png') }}"> 
-      					<h2><a href="{{ URL::to('garantia') }}">Politicas De Garantia</a></h2> 	
-      				</div>      				    				
-      			</article>
-      			<article class="info">
-      				<div class="infoimg">
-      					<img src="{{ asset('img/Babilonia.jpg') }}">      					
-      				</div>
-      				<div class="infocenter">
-      					<img src="{{ asset('img/archivo.png') }}"> 
-      					<h2><a href="">Archivos</a></h2> 	
-      				</div>      				    				
-      			</article>   
-      			<article class="info">
-      				<div class="infoimg">
-      					<img src="{{ asset('img/Babilonia.jpg') }}">      					
-      				</div>
-      				<div class="infocenter">
-      					<img src="{{ asset('img/manos.png') }}"> 
-      					<h2><a href="">Rerefencias Comerciales</a></h2> 	
-      				</div>      				    				
-      			</article>   
-      			<article class="info">
-      				<div class="infoimg">
-      					<img src="{{ asset('img/Babilonia.jpg') }}">      					
-      				</div>
-      				<div class="infocenter">
-      					<img src="{{ asset('img/facebook.png') }}"> 
-      					<h2><a href="">Resdes Sociales</a></h2> 	
-      				</div>      				    				
-      			</article>         			 
+            <div class="row">
+        		  <article class="info col-xs-3 col-md-12">
+        				<div class="infoimg">
+        					<img src="{{ asset('img/Babilonia.jpg') }}">      					
+        				</div>
+        				<div class="infocenter">
+        					<img src="{{ asset('img/casco.png') }}"> 
+        					<h2><a href="{{ URL::to('garantia') }}">Politicas De Garantia</a></h2> 	
+        				</div>      				    				
+        			</article>            
+        			<article class="info col-xs-3 col-md-12">
+        				<div class="infoimg">
+        					<img src="{{ asset('img/Babilonia.jpg') }}">      					
+        				</div>
+        				<div class="infocenter">
+        					<img src="{{ asset('img/archivo.png') }}"> 
+        					<h2><a href="">Archivos de Empresa</a></h2> 	
+        				</div>      				    				
+        			</article>   
+        			<article class="info col-xs-3 col-md-12">
+        				<div class="infoimg">
+        					<img src="{{ asset('img/Babilonia.jpg') }}">      					
+        				</div>
+        				<div class="infocenter">
+        					<img src="{{ asset('img/manos.png') }}"> 
+        					<h2><a href="">Rerefencias Comerciales</a></h2> 	
+        				</div>      				    				
+        			</article>   
+        			<article class="info col-xs-3 col-md-12">
+        				<div class="infoimg">
+        					<img src="{{ asset('img/Babilonia.jpg') }}">      					
+        				</div>
+        				<div class="infocenter">
+        					<img src="{{ asset('img/facebook.png') }}"> 
+        					<h2><a href="">Resdes Sociales</a></h2> 	
+        				</div>      				    				
+        			</article> 
+            </div>        			 
       		</div>
       		<div class="col-md-9">
       			@yield('contenido')
